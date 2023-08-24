@@ -1,0 +1,552 @@
+:root {
+    --primary-color: #1E47FF;
+}
+
+/* Libraries */
+.p15 {
+    padding-inline: 15rem;
+}
+
+.p20 {
+    padding-inline: 20rem;
+}
+
+.p8 {
+    padding-block: 8rem
+}
+
+.p2 {
+    padding-block: 2rem;
+}
+
+/*  Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem
+}
+
+nav ul li a {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline
+}
+
+.login {
+    font-size: 1.2rem;
+}
+
+.login img {
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("../images/cover.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    height: 90vh;
+}
+
+.hero button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.hero div h1 {
+    font-size: 4rem;
+}
+
+.hero span {
+
+    text-decoration: underline;
+}
+
+.hero-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+/* Service Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.services div {
+    border: 1px solid rgba(30, 71, 255, 0.37);
+    border-radius: 0.3rem;
+    width: 33%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services div h1 {
+    padding-top: 1.5rem;
+
+}
+
+/* Vision */
+.vision {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vision-img {
+    width: 100%;
+}
+
+.vision span {
+    color: #1B3868;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.vision button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Business Section */
+.business-section {
+    text-align: center;
+}
+
+.business {
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.businessCards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+.overlay {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 0.7rem 2rem;
+    display: inline-flex;
+    font-weight: 700;
+    position: absolute;
+    z-index: 2;
+    bottom: 105px;
+    left: 90px;
+    background-color: #fff;
+    width: 190px;
+    justify-content: center;
+}
+
+.business p {
+    margin-top: 2rem
+}
+
+/* Image Section */
+.image img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+/* Diff */
+.diff-section h1 {
+    text-align: center;
+}
+
+.diff {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.diff div {
+
+    border-radius: 0.3rem;
+    width: 33%;
+    padding: 1rem;
+
+}
+
+.diff div h3 {
+    padding-top: 1.5rem;
+}
+
+.diff span {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.diff span img {
+    vertical-align: middle;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    width: 5%;
+}
+
+/* testimonials */
+.testimonials {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__image {
+    height: 200px;
+    left: 100px;
+    position: relative
+}
+
+.testimonials__image img {
+    height: 200px;
+}
+
+.testimonials__text {
+    height: 400px;
+    background-color: var(--primary-color);
+    align-items: center;
+    display: flex;
+    padding: 1rem 1rem 1rem 10rem;
+    color: white;
+}
+
+/* Blog */
+.blogs h1 {
+    text-align: center;
+}
+
+.blogCards {
+    display: flex;
+    gap: 2rem;
+}
+
+.blogCards div {
+    cursor: pointer;
+}
+
+.blogCards img {
+    width: 100%;
+    height: 200px;
+}
+
+.blog p img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.blog p {
+    font-size: medium;
+}
+
+.blog span {
+    margin-left: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Contact */
+.contact {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    background: rgba(0, 0, 0, .65) url('../images/footer-cover.jpg') no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.contact button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    margin-top: 2rem;
+}
+
+.col-1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.col-2 {
+    justify-self: end;
+}
+
+.col-3 {
+    justify-self: end;
+}
+
+.col-1 img {
+    vertical-align: middle;
+    padding-right: 0.5rem;
+}
+
+.col-1 .icons {
+    margin-top: 1.5rem;
+}
+
+.col-1 .icons img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.col-2 li {
+    cursor: pointer;
+    color: #8B8F95;
+
+}
+
+.col-3 address {
+    color: #8B8F95;
+    font-size: small;
+}
+
+.copyright {
+
+    color: #8B8F95;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left ul {
+    display: flex;
+    gap: 2rem
+
+}
+
+.left ul li {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .p15 {
+        padding-inline: 1.5rem;
+    }
+
+    .p20 {
+        padding-inline: 2rem;
+    }
+
+    .p8 {
+        padding-block: 0.8rem
+    }
+
+    .p2 {
+        padding-block: 0.2rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+
+        padding: 2rem
+    }
+
+    .hero-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero div h1 {
+        font-size: 2rem;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .services div {
+        width: 100%;
+    }
+
+    .vision {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .business-section {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .businessCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin-top: 2rem;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .diff-section h1 {
+        text-align: center;
+    }
+
+    .diff {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .diff h3 {
+        margin-top: 0;
+    }
+
+    .diff div {
+        border-radius: 0.3rem;
+        width: 100%;
+    }
+
+    .testimonials {
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testimonials__image {
+        left: 0;
+    }
+
+    .testimonials__text {
+        height: 400px;
+        padding: 2rem;
+    }
+
+    .blogs {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .blogCards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: 6fr 3fr 3fr;
+        margin-top: 2rem;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-1 {
+        grid-column: 1/span 3;
+        font-weight: 700;
+        font-size: 2rem;
+        justify-self: center;
+    }
+
+    .col-2 {
+        justify-self: start;
+        grid-column: 1/span 2
+
+    }
+
+    .col-3 {
+        justify-self: end;
+
+
+    }
+
+
+    .copyright {
+        padding: 2rem;
+        color: #8B8F95;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left ul {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+    }
+
+    .left ul li {
+        cursor: pointer;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+    }
+
+}
